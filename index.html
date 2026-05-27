@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LOS - Logística na Organização da Saúde</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#0b1d3a;
+    }
+
+    header{
+      background:#003b99;
+      padding:25px 70px;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+    }
+
+    .logo h1{
+      font-size:58px;
+      line-height:50px;
+    }
+
+    .logo p{
+      font-size:20px;
+      margin-top:10px;
+    }
+
+    .menu{
+      display:flex;
+      gap:40px;
+      list-style:none;
+    }
+
+    .menu a{
+      color:white;
+      text-decoration:none;
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:#003b99;
+      color:white;
+      padding:50px 70px 80px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-text h2{
+      font-size:72px;
+      line-height:1.1;
+      margin-bottom:30px;
+    }
+
+    .hero-text p{
+      font-size:28px;
+      line-height:1.6;
+      max-width:700px;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:18px 35px;
+      border-radius:15px;
+      font-size:22px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#3b82f6;
+      color:white;
+    }
+
+    .btn-secondary{
+      border:2px solid white;
+      color:white;
+    }
+
+    .hero img{
+      width:520px;
+      border-radius:30px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+      padding:60px 70px;
+    }
+
+    .card{
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3{
+      font-size:32px;
+      margin-bottom:20px;
+      color:#003b99;
+    }
+
+    .card p{
+      font-size:22px;
+      line-height:1.5;
+    }
+
+    .mission{
+      padding:80px 70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .mission-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .mission-text span{
+      color:#003b99;
+      font-weight:bold;
+      font-size:22px;
+    }
+
+    .mission-text h2{
+      font-size:60px;
+      margin:20px 0;
+      line-height:1.1;
+    }
+
+    .mission-text p{
+      font-size:26px;
+      line-height:1.6;
+      margin-bottom:30px;
+    }
+
+    .mission img{
+      width:520px;
+      border-radius:25px;
+    }
+
+    footer{
+      background:#003b99;
+      color:white;
+      padding:60px 70px 20px;
+    }
+
+    .footer-content{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:40px;
+    }
+
+    .footer-box h2{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    .footer-box p,
+    .footer-box li{
+      font-size:22px;
+      margin-bottom:12px;
+      list-style:none;
+    }
+
+    .footer-box ul{
+      padding:0;
+    }
+
+    .copyright{
+      text-align:center;
+      margin-top:40px;
+      border-top:1px solid rgba(255,255,255,0.3);
+      padding-top:20px;
+      font-size:18px;
+    }
+
+    @media(max-width:900px){
+
+      .hero-text h2{
+        font-size:48px;
+      }
+
+      .mission-text h2{
+        font-size:42px;
+      }
+
+      .hero img,
+      .mission img{
+        width:100%;
+      }
+
+      header,
+      .hero,
+      .cards,
+      .mission,
+      footer{
+        padding-left:25px;
+        padding-right:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>LOS</h1>
+        <p>Logística na Organização da Saúde</p>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">Missão</a></li>
+        <li><a href="#">Visão</a></li>
+        <li><a href="#">Valores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Logística de Medicamentos e Vacinas</h2>
+
+      <p>
+        Garantimos qualidade, segurança e eficiência
+        em toda a cadeia logística, desde o armazenamento
+        até a distribuição de medicamentos e vacinas.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+        <a href="#" class="btn btn-secondary">Fale conosco</a>
+      </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=1200&auto=format&fit=crop" alt="">
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Qualidade</h3>
+      <p>
+        Garantimos o mais alto padrão de qualidade
+        em todos os nossos processos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Eficiência</h3>
+      <p>
+        Processos logísticos otimizados
+        para entregas rápidas e seguras.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Compromisso</h3>
+      <p>
+        Comprometidos com a saúde
+        e o bem-estar da população.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="mission">
+
+    <div class="mission-text">
+      <span>NOSSA MISSÃO</span>
+
+      <h2>
+        Levar saúde com responsabilidade
+        e excelência
+      </h2>
+
+      <p>
+        Atuamos para integrar pessoas, processos e tecnologia,
+        garantindo que medicamentos e vacinas cheguem a quem precisa,
+        com segurança e pontualidade.
+      </p>
+
+      <a href="#" class="btn btn-primary">
+        Conheça nossa missão
+      </a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1585435557343-3b092031d4f7?q=80&w=1200&auto=format&fit=crop" alt="">
+
+  </section>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-box">
+        <h2>LOS</h2>
+        <p>Logística na Organização da Saúde</p>
+        <br>
+        <p>Eficiência que transforma,</p>
+        <p>saúde que conecta.</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Colaboradores</h3>
+        <ul>
+          <li>Vitória</li>
+          <li>Kauan</li>
+          <li>Isabella</li>
+          <li>Noemi</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2025 LOS - Logística na Organização da Saúde.
+      Todos os direitos reservados.
+    </div>
+
+  </footer>
+
+</body>
+</html>
