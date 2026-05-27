@@ -1,9 +1,9 @@
-# LOS
+# LOS 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOS - Logística na Organização da Saúde</title>
 
 <style>
@@ -12,18 +12,18 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f5f7fb;
+    background:#f4f9ff;
     overflow-x:hidden;
 }
 
-/* MENU */
+/* HEADER */
 
 header{
-    background:#003d99;
+    background:#5DA9FF;
     padding:20px 25px;
 }
 
@@ -40,7 +40,6 @@ nav{
 
 .logo h1{
     font-size:48px;
-    font-weight:bold;
 }
 
 .logo p{
@@ -63,18 +62,18 @@ nav{
 }
 
 .menu a:hover{
-    color:#73a7ff;
+    color:#dff1ff;
 }
 
 /* HERO */
 
 .hero{
-    background:#003d99;
+    background:#5DA9FF;
     color:white;
     padding:50px 25px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:40px;
     flex-wrap:wrap;
 }
@@ -85,7 +84,7 @@ nav{
 }
 
 .hero-text h2{
-    font-size:62px;
+    font-size:60px;
     line-height:1.1;
     margin-bottom:25px;
 }
@@ -104,16 +103,16 @@ nav{
 
 .btn{
     padding:18px 28px;
-    border-radius:14px;
     border:none;
+    border-radius:14px;
+    cursor:pointer;
     font-size:18px;
     font-weight:bold;
-    cursor:pointer;
     transition:0.3s;
 }
 
 .btn-primary{
-    background:#2f80ff;
+    background:#8EC5FF;
     color:white;
 }
 
@@ -125,30 +124,30 @@ nav{
 
 .btn:hover{
     transform:scale(1.05);
-    opacity:0.9;
 }
 
 .hero img{
-    width:480px;
+    width:500px;
     max-width:100%;
     border-radius:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
 /* CARDS */
 
 .cards{
+    padding:50px 25px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
-    padding:50px 25px;
 }
 
 .card{
     background:white;
     padding:35px 25px;
-    border-radius:22px;
+    border-radius:25px;
     text-align:center;
-    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -159,20 +158,21 @@ nav{
 .icon{
     width:80px;
     height:80px;
-    background:#edf4ff;
+    margin:auto;
     border-radius:50%;
+    background:#DDEEFF;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:0 auto 20px;
     font-size:35px;
-    color:#0050cc;
+    color:#5DA9FF;
+    margin-bottom:20px;
 }
 
 .card h3{
-    font-size:30px;
+    color:#5DA9FF;
     margin-bottom:15px;
-    color:#0b2f6d;
+    font-size:30px;
 }
 
 .card p{
@@ -185,8 +185,8 @@ nav{
 .mission{
     padding:70px 25px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:40px;
     flex-wrap:wrap;
 }
@@ -197,35 +197,36 @@ nav{
 }
 
 .mission-text span{
-    color:#0050cc;
+    color:#5DA9FF;
     font-weight:bold;
     font-size:18px;
 }
 
 .mission-text h2{
     font-size:55px;
-    color:#0b2f6d;
-    margin:18px 0;
+    margin:20px 0;
+    color:#3a6ea5;
     line-height:1.1;
 }
 
 .mission-text p{
     font-size:22px;
     line-height:1.6;
+    color:#444;
     margin-bottom:30px;
-    color:#333;
 }
 
 .mission img{
     width:500px;
     max-width:100%;
     border-radius:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
 
 footer{
-    background:#003d99;
+    background:#5DA9FF;
     color:white;
     padding:50px 25px 20px;
 }
@@ -243,36 +244,28 @@ footer{
 }
 
 .footer-box h3{
-    margin-bottom:15px;
     font-size:28px;
+    margin-bottom:15px;
 }
 
 .footer-box p,
 .footer-box li{
+    list-style:none;
     font-size:20px;
     line-height:1.7;
-    list-style:none;
-}
-
-.footer-box ul{
-    padding:0;
 }
 
 .copy{
-    text-align:center;
-    border-top:1px solid rgba(255,255,255,0.3);
     margin-top:30px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    text-align:center;
     padding-top:20px;
     font-size:16px;
 }
 
-/* CELULAR */
+/* RESPONSIVO */
 
 @media(max-width:768px){
-
-    .hero{
-        text-align:center;
-    }
 
     nav{
         justify-content:center;
@@ -281,6 +274,10 @@ footer{
 
     .menu{
         justify-content:center;
+    }
+
+    .hero{
+        text-align:center;
     }
 
     .hero-text h2{
@@ -308,8 +305,8 @@ footer{
     }
 
     .footer-content{
-        text-align:center;
         justify-content:center;
+        text-align:center;
     }
 
 }
@@ -352,20 +349,19 @@ Vacinas
 
 <p>
 Garantimos qualidade, segurança e eficiência
-em toda a cadeia logística, desde o
-armazenamento até a distribuição de
-medicamentos e vacinas.
+em toda a cadeia logística, desde o armazenamento
+até a distribuição de medicamentos e vacinas.
 </p>
 
 <div class="buttons">
 
 <button class="btn btn-primary"
-onclick="mostrarMensagem()">
+onclick="saibaMais()">
 Saiba mais
 </button>
 
 <button class="btn btn-secondary"
-onclick="falarEquipe()">
+onclick="mostrarEquipe()">
 Equipe
 </button>
 
@@ -384,6 +380,7 @@ Equipe
 <div class="card">
 <div class="icon">✓</div>
 <h3>Qualidade</h3>
+
 <p>
 Garantimos o mais alto padrão
 de qualidade em todos os nossos processos.
@@ -393,6 +390,7 @@ de qualidade em todos os nossos processos.
 <div class="card">
 <div class="icon">🚚</div>
 <h3>Eficiência</h3>
+
 <p>
 Processos logísticos otimizados
 para entregas rápidas e seguras.
@@ -402,6 +400,7 @@ para entregas rápidas e seguras.
 <div class="card">
 <div class="icon">👥</div>
 <h3>Compromisso</h3>
+
 <p>
 Comprometidos com a saúde
 e o bem-estar da população.
@@ -432,7 +431,7 @@ com segurança e pontualidade.
 </p>
 
 <button class="btn btn-primary"
-onclick="missao()">
+onclick="mostrarMissao()">
 Conheça nossa missão
 </button>
 
@@ -449,6 +448,7 @@ Conheça nossa missão
 <div class="footer-content">
 
 <div class="footer-box">
+
 <h2>LOS</h2>
 
 <p>Logística na Organização da Saúde</p>
@@ -485,15 +485,15 @@ saúde que conecta.
 
 <script>
 
-function mostrarMensagem(){
-    alert("A LOS garante logística segura para medicamentos e vacinas.");
+function saibaMais(){
+    alert("A LOS oferece logística segura e eficiente para medicamentos e vacinas.");
 }
 
-function falarEquipe(){
-    alert("Equipe: Vitória, Kauan, Isabella e Noemi.");
+function mostrarEquipe(){
+    alert("Colaboradores: Vitória, Kauan, Isabella e Noemi.");
 }
 
-function missao(){
+function mostrarMissao(){
     alert("Nossa missão é levar saúde com responsabilidade e excelência.");
 }
 
